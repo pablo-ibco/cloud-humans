@@ -1,0 +1,17 @@
+
+- referral_code from the request body is not required
+- Education Level: "no_education", "high_school" or "bachelors_degree_or_high")
+- Age: an integer equal or greater than 0
+- Past experiences: JSON object with bool attributes sales and support
+- Internet Test: JSON object with the result of an internet test already made by the frontend (the attributes are positive floats, where 50.4 == 50.4 megabytes)
+- Writing Score: float between 0 and 1
+- Referral code: a string with a referral token provided by another Pro
+
+
+If the Pro is under age, she is ineligible to be paired with any project -> Guard clause
+If the Pro education level is "high_school" she receives 1 score point, if it is "bachelors_degree_or_high" she receives 2 -> simple function
+If the Pro has experience with sales and/or support she receives 5 and 3 score points respectively -> simple function
+If the referral code is valid (consider the value "token1234" as valid) she receives 1 score point. -> simple function
+If her internet download speed is greater than 50mb she receives 1 score point, if it is lower than 5mb her score points are deducted in 1. The same rule applies for upload speed. -> simple function
+
+If her writing score is lower than 0.3 she is deducted in 1 point. If between 0.3 and 0.7 she receives 1 point. If greather than 0.7 she receives 2 points. -> simple function

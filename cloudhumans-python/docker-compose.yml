@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '4500:4500'
+    container_name: app-python
+    restart: always
+
+volumes:
+  api-logs:
