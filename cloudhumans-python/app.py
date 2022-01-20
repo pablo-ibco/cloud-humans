@@ -86,9 +86,9 @@ def scoreReferralCode(referral_code):
 
 def scoreWritingSkills(writing_score):
     result = 0
-    if writing_score >= MINIMAL_SCORABLE_WRITING_RESULT:
+    if writing_score > MINIMAL_SCORABLE_WRITING_RESULT:
       result = result + SCORES_TABLE['good_writing']
-    elif writing_score >= MINIMAL_ACCEPTABLE_WRITING_RESULT:
+    elif writing_score > MINIMAL_ACCEPTABLE_WRITING_RESULT:
       result = result + SCORES_TABLE['acceptable_writing']
     else:
       result = result - SCORES_TABLE['bad_writing']
