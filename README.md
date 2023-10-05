@@ -81,15 +81,3 @@ Considering the data provided above, the application should return the following
     "ineligible_projects": ["calculate_dark_matter_nasa"]
 }
 ```
-
-## Criteria
-You may use any language and framework provided that you build a solid system with an emphasis on code quality, simplicity, readability, maintainability, and reliability, particularly regarding architecture and testing.
-
-Important criterias:
-* Emphasis on code quality, simplicity, readability, maintainability, and reliability, particularly regarding architecture and testing
-* How clean and organized your code is;
-* If you implemented the business rules correctly;
-* How good your automated tests are (qualitative over quantitative).
-
-Other important notes:
-* Develop an extensible algorithm
